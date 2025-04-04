@@ -1,16 +1,24 @@
 package livraria;
 
 import java.util.Scanner;
+import livraria.model.Livro;
+import livraria.model.PublicoAlvo;
 
 public class Menu {
 
 	public static void main(String[] args) {
 
+		// teste de consulta publico alvo
+		PublicoAlvo l1 = new PublicoAlvo("O pequeno Principe", "Antoine de Saint-Exupéry", 121, 10, 20.0, 6, 1);
+		l1.visualizar();
+		l1.classificar();
+		
+
 		Scanner ler = new Scanner(System.in);
 
-		int opcaoMenu = 0, codigoDoLivro, quantidadeDoLivro;
-		float precoDoLivro;
-		String nomeDoLivro, autorDoLivro, generoDoLivro;
+		int opcaoMenu = 0, codigoDoLivro, quantidadeDoLivro, categoriaDoLivro;
+		double precoDoLivro;
+		String nomeDoLivro, autorDoLivro;
 
 		while (true) {
 
