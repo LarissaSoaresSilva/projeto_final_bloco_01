@@ -1,6 +1,7 @@
 package livraria.repository;
 
 import livraria.model.Livro;
+import java.util.List;
 
 public interface LivrariaRepository {
 
@@ -13,4 +14,5 @@ public interface LivrariaRepository {
 	public void excluirLivro(int codigoDoLivro);
 
 	public void classificar(int categoriaDoLivro, int faixaEtaria);
+
 }

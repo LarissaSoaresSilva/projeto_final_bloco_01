@@ -1,5 +1,7 @@
 package livraria.model;
 
+import livraria.controller.EstoqueController;
+
 public abstract class Livro {
 
 	private String nomeDoLivro;
@@ -7,8 +9,8 @@ public abstract class Livro {
 	private int codigoDoLivro;
 	private int quantidadeDoLivro;
 	double precoDoLivro;
-
-	public Livro(String nomeDoLivro, String autorDoLivro,int codigoDoLivro,int quantidadeDoLivro, double precoDoLivro) {
+	
+	public Livro(String nomeDoLivro, String autorDoLivro,int codigoDoLivro,int quantidadeDoLivro,double precoDoLivro) {
 		this.nomeDoLivro = nomeDoLivro;
 		this.autorDoLivro = autorDoLivro;
 		this.codigoDoLivro = codigoDoLivro;
@@ -17,7 +19,7 @@ public abstract class Livro {
 		
 	}
 
-	public String getNomeDoLivro() {
+	public  String getNomeDoLivro() {
 		return nomeDoLivro;
 	}
 
@@ -58,7 +60,10 @@ public abstract class Livro {
 	public void setPrecoDoLivro(double precoDoLivro) {
 		this.precoDoLivro = precoDoLivro;
 	}
-
+	
+	public abstract int classificar();
+	
+	
 	
 	public void visualizar() {
 	
@@ -72,6 +77,8 @@ public abstract class Livro {
 		System.out.println("Quantidade em estoque: " + this.quantidadeDoLivro);
 
 	}
+
+	
 
 }
 	

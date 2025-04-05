@@ -3,13 +3,12 @@ package livraria.model;
 public class PublicoAlvo extends Livro {
 
 	private int faixaEtaria;
-	private int categoriaDoLivro;
+
 
 	public PublicoAlvo(String nomeDoLivro, String autorDoLivro, int codigoDoLivro, int quantidadeDoLivro,
-			double precoDoLivro, int faixaEtaria, int categoriaDoLivro) {
+			double precoDoLivro, int faixaEtaria) {
 		super(nomeDoLivro, autorDoLivro, codigoDoLivro, quantidadeDoLivro, precoDoLivro);
 		this.faixaEtaria = faixaEtaria;
-		this.categoriaDoLivro = categoriaDoLivro;
 
 	}
 
@@ -21,46 +20,28 @@ public class PublicoAlvo extends Livro {
 		this.faixaEtaria = faixaEtaria;
 	}
 
-	public int getCategoriaDoLivro() {
-		return categoriaDoLivro;
-	}
 
-	public void setCategoriaDoLivro(int categoriaDoLivro) {
-		this.categoriaDoLivro = categoriaDoLivro;
-	}
+	
+@Override
+	public int classificar() {
 
-	public void classificar() {
+		  if (faixaEtaria <= 12) {
 
-		switch (this.categoriaDoLivro) {
-
-		case 1:
-			if (faixaEtaria <= 12) {
-				System.out.println("Livro para Crianças.");
-			}
-			break;
-
-		case 2:
-			if (faixaEtaria >= 13 && faixaEtaria <= 18) {
-				System.out.println("Livro para Jovens.");
-			}
-			break;
-
-		case 3:
-			if (faixaEtaria >= 18) {
-
-				System.out.println("Livro para Adultos.");
-			}
-			break;
-
-		default:
-			System.out.println("Categoria de livro inválida.");
-			break;
+	            System.out.println("Categoria do livro: Crianças");
+	            return 1; 
+	        } else if (faixaEtaria >= 13 && faixaEtaria <= 18) {
+	            
+	            System.out.println("Categoria do livro: Jovens");
+	            return 2; 
+	            
+	        } else if (faixaEtaria >= 19) {
+	            System.out.println("Categoria do livro: Adultos");
+	            return 3; 
+	            
+	        } else {
+	            System.out.println("Faixa etária inválida!");
+	            return -1;
+	            
+	        }
 		}
-	}
-
-	@Override
-	public void visualizar() {
-		super.visualizar();
-		System.out.println("Categoria do Livro: " + this.categoriaDoLivro);
-	}
 }
