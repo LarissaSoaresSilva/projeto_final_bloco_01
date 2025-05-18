@@ -6,11 +6,11 @@
 </p>
 
 <p align="center" >
- <a href="#descrição-do-projeto">Descrição</a> •
- <a href="#tecnologia-utilizada">Tecnologia</a> • 
- <a href="#funcionalidades-do-crud">Funcionalidades</a> •
- <a href="#estrutura-do-projeto">Estrutura do Projeto</a> •
- <a href="#melhorias-futuras">Melhorias Futuras</a> •
+ <a href="#-descrição">Descrição</a> •
+ <a href="#-tecnologia-utilizada">Tecnologia</a> • 
+ <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-estrutura-do-projeto">Estrutura do Projeto</a> •
+ <a href="#-melhorias-futuras">Melhorias Futuras</a> •
 </p>
 
 ##
