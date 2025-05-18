@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/64d3f6ef-503c-44eb-9f5d-5062fae30c75" alt="Banner do Projeto">
+</p>
+
 <h1 align="center">🕹️ Projeto Final - Bloco 01 | Generation Brasil</h1>
 
 <p align="center">
